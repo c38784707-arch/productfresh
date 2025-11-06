@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario Pro con Almacenamiento Local</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <div class="container">
+        <h1>🛒 Gestión de Inventario Pro</h1>
+        
+        <div class="summary">
+            <p>Productos Únicos: <span id="uniqueItemsCount">0</span></p>
+            <p>Total de Artículos: <span id="totalItemsCount">0</span></p>
+        </div>
+ 
+        <form id="productForm">
+            <input type="text" id="productName" required placeholder="Nombre del Producto..." aria-label="Nombre del Producto">
+            <input type="number" id="productCount" value="1" min="1" required placeholder="Cantidad" aria-label="Cantidad">
+            <button type="submit" class="add-btn">➕ Agregar</button>
+        </form>
+ 
+        <div class="actions">
+            <button id="exportButton" class="action-btn export-btn">💾 Exportar a CSV</button>
+            <button id="clearButton" class="action-btn clear-btn">🗑️ Limpiar Lista</button>
+        </div>
+ 
+        <h2>📝 Lista de Productos</h2>
+        
+        <div class="table-container">
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
+ 

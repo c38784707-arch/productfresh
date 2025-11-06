@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+ 
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+}
+ 
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+ 
+form input[type="text"], 
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+ 
+.add-btn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+ 
+.add-btn:hover {
+    background-color: #45a049;
+}
+ 
+.actions {
+    text-align: right;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f5;
+    margin: 0;
+    padding: 20px;
+}
+ 
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto; /* Centrar en pantallas grandes */
+}
+ 
+/* 1. ESTILO PARA FORMULARIO Y RESPONSIVO */
+#productForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+ 
+#productForm input[type="text"] {
+    flex-grow: 2; /* Ocupa más espacio */
+}
+ 
+#productForm input[type="number"] {
+    width: 80px; /* Ancho fijo para la cantidad */
+    text-align: center;
+}
+ 
+#productForm input, #productForm button {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+ 
+.add-btn {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+ 
+.add-btn:hover {
+    background-color: #0056b3;
+}
+ 
+/* 2. CONTADORES */
+.summary {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+ 
+.summary p {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+}
+ 
+.summary span {
+    font-weight: bold;
+    color: #007bff;
+}
+ 
+/* 3. ACCIONES Y BOTONES */
+.actions {
+    display: flex;
+    justify-content: flex-end; /* Alinear a la derecha */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+ 
+.action-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: opacity 0.3s;
+}
+ 
+.export-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+ 
+.clear-btn {
+    background-color: #f44336;
+    color: white;
+}
+ 
+/* 4. TABLA Y ELIMINAR */
+.table-container {
+    overflow-x: auto; /* Permite desplazamiento horizontal en pantallas muy pequeñas */
+}
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+ 
+th, td {
+    border: 1px solid #eee;
+    padding: 12px;
+    text-align: left;
+    font-size: 0.95em;
+}
+ 
+th {
+    background-color: #f7f7f7;
+    font-weight: 600;
+}
+ 
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em; /* Más grande para fácil uso táctil */
+}
+ 
